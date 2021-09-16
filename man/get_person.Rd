@@ -13,19 +13,19 @@ get_person(person_id, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \value{
 list with the following elements:
-- TitulPred: academic titles written before person's name
-- Jmeno: given name
-- Prijmeni: surname
-- TitulPo: academic titles written after person's name (if applicable)
-- Narozeni: date of birth
-- NameId: person's id
-- Profile: URL of profile at hlidacstatu.cz
-- Sponzoring: data.frame with data on sponsorship of political parties
+- titulPred: academic titles written before person's name
+- jmeno: given name
+- prijmeni: surname
+- titulPo: academic titles written after person's name (if applicable)
+- narozeni: date of birth
+- nameId: person's id
+- profile: URL of profile at hlidacstatu.cz
+- sponzoring: data.frame with data on sponsorship of political parties
 by the person
-- Udalosti: events related to the person such as party membership and
+- udalosti: events related to the person such as party membership and
 running in election, serving in political bodies and relations to private
 companies (shareholder, serving on a board)
-- SocialniSite: data.frame with data on social media accounts
+- socialniSite: data.frame with data on social media accounts
 }
 \description{
 Get person details
@@ -36,12 +36,13 @@ get_person("andrej-babis")
 }
 }
 \seealso{
-\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/swagger/index.html}
 
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 
 Other Persons: 
 \code{\link{get_person_social}()},
+\code{\link{search_person_by_parameters}()},
 \code{\link{search_person}()}
 }
 \concept{Persons}

@@ -13,9 +13,9 @@ get_company(company_name, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \value{
 list with 3 elements:
-- ICO: ID number of the company
-- Jmeno: Name of the company
-- DatoveSchranky: Data post box - electronic repository for communication between
+- ico: ID number of the company
+- jmeno: Name of the company
+- datoveSchranky: Data post box - electronic repository for communication between
 public institutions and private companies/people
 }
 \description{
@@ -27,7 +27,7 @@ get_company("Agrofert")
 }
 }
 \seealso{
-\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/swagger/index.html}
 
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 }

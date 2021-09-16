@@ -12,9 +12,9 @@ get_datasets(token = Sys.getenv("HLIDAC_TOKEN"))
 \value{
 Response from the server containing a list of all datasets available.
 The list contains 3 elements:
-- Total: Total number of datasets available (integer)
-- Page: Page of the result (integer)
-- Results: data concerning the datasets (data.frame)
+- total: Total number of datasets available (integer)
+- page: Page of the result (integer)
+- results: data concerning the datasets (data.frame)
 }
 \description{
 Get list of datasets available via 'Hlídač státu' API
@@ -25,7 +25,7 @@ get_datasets()
 }
 }
 \seealso{
-\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/swagger/index.html}
 
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 

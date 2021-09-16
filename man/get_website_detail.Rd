@@ -13,9 +13,9 @@ get_website_detail(id, token = Sys.getenv("HLIDAC_TOKEN"))
 }
 \value{
 list with 2 elements:
-- Availability: data on availability of the website
+- availability: data on availability of the website
 including response time and HTTP status code every minute
-- SSL: assessment of the website's SSL server configuration
+- ssl: assessment of the website's SSL server configuration
 }
 \description{
 Get website detail
@@ -26,7 +26,7 @@ get_website_detail(id = "10107")
 }
 }
 \seealso{
-\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/swagger/index.html}
 
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 }

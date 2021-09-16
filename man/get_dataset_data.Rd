@@ -20,7 +20,7 @@ get_dataset_data(
 
 \item{query}{Search query}
 
-\item{page}{Number of page}
+\item{page}{Number of page (Please note that if the page parameter exceeds 200, the function returns error)}
 
 \item{sort}{Sort by column}
 
@@ -28,9 +28,9 @@ get_dataset_data(
 }
 \value{
 list containing 3 elements:
-- Total: Total number of datasets available (integer)
-- Page: Page of the result (integer), equal to the `page` argument of the function
-- Results: Data.frame with data, columns vary depending on the dataset
+- total: Total number of datasets available (integer)
+- page: Page of the result (integer), equal to the `page` argument of the function
+- results: Data.frame with data, columns vary depending on the dataset
 }
 \description{
 Get data from the dataset
@@ -42,7 +42,7 @@ get_dataset_data("ministri", query = "Zeman", page = 1)
 }
 }
 \seealso{
-\url{https://www.hlidacstatu.cz/api/v2/swagger/index}
+\url{https://www.hlidacstatu.cz/swagger/index.html}
 
 \url{https://www.hlidacstatu.cz/api/v1/doc}
 
